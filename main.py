@@ -5,7 +5,7 @@ from image import image_conv
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # Load the image
-image_path = 'test.jpeg'
+image_path = 'testpng.png'
 new_path =image_conv(image_path)
 image = Image.open(new_path)
 text = pytesseract.image_to_string(image)
